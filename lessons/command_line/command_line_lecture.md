@@ -150,7 +150,7 @@ Nice.
 > Let's save the output of the `curl` command to a file called `data.txt`. How
 would we do that?
 
-> curl "someURL" echo>data.txt
+> curl "someURL">data.txt
 
 Now that we have the data file, let's learn how to manipulate files.
 
