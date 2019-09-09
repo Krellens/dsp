@@ -122,6 +122,8 @@ why.
 
 > Hint: we learned how to list all the files up above.
 
+> echo when followed by > 'some_file' directs the output into that file. When we list the files using ls we see the file "test_file.txt" so we can assume the output was placed there
+
 The greater than says, "put that output into the following file instead."
 
 What if we want to read that file back out to the terminal?
