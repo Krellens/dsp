@@ -150,6 +150,8 @@ Nice.
 > Let's save the output of the `curl` command to a file called `data.txt`. How
 would we do that?
 
+> curl "someURL" echo>data.txt
+
 Now that we have the data file, let's learn how to manipulate files.
 
 ### Copying, Moving, and Removing Files
@@ -196,6 +198,8 @@ ls -lh
 ```
 
 > What changed?
+
+> it has a 'B' next to file size, which I assume will change to KB or MB when we're dealing with larger files 
 
 If instead copying we just want to change the name of a file, we can do:
 
