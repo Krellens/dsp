@@ -8,8 +8,8 @@ pmf_kids = thinkstats2.Pmf(resp.numkdhh, label = 'PMF')
 
 #make a copy of pmf_kids <br>
 pmf_kids_bias = pmf_kids.Copy(label='biased PMF')       
-
-#use items to iterate through pmf_kids, then multiply each element<p>
+<p>
+#use items to iterate through pmf_kids, then multiply each element
 #by the corresponding number of kids to bias the data accordingly 
 #normalize the generated bias pmf</p>
 for x, p in pmf_kids_bias.Items():         
