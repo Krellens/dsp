@@ -3,15 +3,15 @@
 #read in data <br>
 resp = nsfg.ReadFemResp()
 
-#generate pmf from numkdhh column
+#generate pmf from numkdhh column <br>
 pmf_kids = thinkstats2.Pmf(resp.numkdhh, label = 'PMF') 
 
-#make a copy of pmf_kids 
+#make a copy of pmf_kids <br>
 pmf_kids_bias = pmf_kids.Copy(label='biased PMF')       
 
-#use items to iterate through pmf_kids, then multiply each element
-#by the corresponding number of kids to bias the data accordingly
-#normalize the generated bias pmf
+#use items to iterate through pmf_kids, then multiply each element<p>
+#by the corresponding number of kids to bias the data accordingly 
+#normalize the generated bias pmf</p>
 for x, p in pmf_kids_bias.Items():         
     pmf_kids_bias.Mult(x, x)               
 pmf_kids_bias.Normalize()                  
