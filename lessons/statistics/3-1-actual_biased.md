@@ -1,17 +1,17 @@
 [Think Stats Chapter 3 Exercise 1](http://greenteapress.com/thinkstats2/html/thinkstats2004.html#toc31) (actual vs. biased)
 <pre>
-#read in data <br>
+#read in data 
 resp = nsfg.ReadFemResp()
 
-#generate pmf from numkdhh column <br>
+#generate pmf from numkdhh column 
 pmf_kids = thinkstats2.Pmf(resp.numkdhh, label = 'PMF') 
 
-#make a copy of pmf_kids <br>
+#make a copy of pmf_kids 
 pmf_kids_bias = pmf_kids.Copy(label='biased PMF')       
 
-#use items to iterate through pmf_kids, then multiply each element<br>
+#use items to iterate through pmf_kids, then multiply each element
 #by the corresponding number of kids to bias the data accordingly 
-#normalize the generated bias pmf</p>
+#normalize the generated bias pmf
 for x, p in pmf_kids_bias.Items():         
     pmf_kids_bias.Mult(x, x)               
 pmf_kids_bias.Normalize()                  
