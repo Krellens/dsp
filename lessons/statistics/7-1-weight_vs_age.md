@@ -15,3 +15,4 @@ thinkplot.Config(xlabel='Age (years)',
 SpearmanCorr(live.agepreg,live.totalwgt_lb)
 
 Corr(live.agepreg,live.totalwgt_lb)
+</pre>
