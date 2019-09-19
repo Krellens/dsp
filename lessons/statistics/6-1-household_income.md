@@ -1,6 +1,6 @@
 [Think Stats Chapter 6 Exercise 1](http://greenteapress.com/thinkstats2/html/thinkstats2007.html#toc60) (household income)
 
-<prev>
+<pre>
   median = cdf.Value(0.5)                            #median is midpt of CDF
 mean = np.sum(sample)/len(sample)                  #mean is sum of sample divided by len of sample
 household_below_mean = cdf.PercentileRank(mean)    #find percentile rank below mean
@@ -15,4 +15,4 @@ std = np.sqrt(central_moment(2,sample))            #calculate standard dev
 skewness=(central_moment(3, sample))/std**3        #calculate skewness
 pearson_skewness = 3*(mean - median)/std           #calculate pearson_skewness
 
-</prev>
+</pre>
